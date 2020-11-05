@@ -57,4 +57,4 @@ Collars made out of two types of stone representing *yin* and *yang* in a never 
 
 Copyright 2020 fde-capu
 
-This is authorial and original work. If you find it profitable or useful in any form, you are not allowed to use it without my authorization; just reach out to me to settle things up, of course I would like to know. If you are here out of intellectual interest, feel free to comment and contribute.
+This is authorial and original work. If you find it profitable or useful in any form, you are not allowed to use it without my authorization; just reach out to me to settle things down - of course I would like to know! If you are here out of intellectual interest, feel free to comment and contribute.
