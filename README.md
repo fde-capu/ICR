@@ -23,11 +23,11 @@ Set the `var tic = x;` where `x` is the value of milliseconds between each itera
 
 #### But the code is a mess!
 
-Yep; it was writen two or more years ago with no formalities whatsoever. Besides, it is a file you _should_ want to play around. I promisse a `C` file at any time.
+Yep; it was writen two or more years ago with no formalities whatsoever. Besides, it is a file you _should_ want to play around.
 
 ##### It would be so much more efficient if...
 
-...do not tell, I know, someday I will code it neatier.
+...do not tell, I know, someday I will code it neatier. I promisse a `C` file at any time.
 
 #### What about the other files?
 
