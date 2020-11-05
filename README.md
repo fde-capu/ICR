@@ -17,22 +17,22 @@ Comments: (1) Many solutions can be found, yet to be categorized and counted. (2
 
 ### This `ICR.js`, how do I use it?
 
-Look at the commented `ref="(...)"` section whithin the file. Leave all commented (`//`), and uncomment only the reference you want to run. Open `index.htm` on a web browser. Wait for the result, it might take a little while.
+Look at the commented `ref="(...);"` section within the file. Leave all comments (`//`), and uncomment only the reference you want to run. Open `index.htm` on a web browser. Wait for the result, it might take a little while.
 
-Set the `var tic = x;` where `x` is the value of milliseconds between each iteration, if you want to watch the ring building processi closely.
+Set the `var tic = x;` where `x` is the value of milliseconds between each iteration, if you want to watch the ring building process closely.
 
 #### But the code is a mess!
 
-Yep; it was writen two or more years ago with no formalities whatsoever. Besides, it is a file you _should_ want to play around.
+Yep; it was written two or more years ago with no formalities whatsoever. Besides, it is a file you _should_ want to play around.
 
 ##### It would be so much more efficient if...
 
-...do not tell, I know, someday I will code it neatier. I promisse a `C` file at any time.
+...do not tell, I know, someday I will code it neatier. I promise a `C` file at any time.
 
 #### What about the other files?
 
 - `ICbitmap.js` writes a qrcodesque `.bmp` file representing all rings.
-- I do not know what `ICgroups.js` (deprecated, present only on the first commit) does; but I am convicted many analisys may outcome from the founded results. Groups, sub-families, areas of similarity, the outcome of reverses, traces of self and colective simmetry, common blocks (I like to name them), and many more. *Please support this research.*
+- I do not know what `ICgroups.js` (deprecated, present only on the first commit) does; but I am under the impression many analysis may result from the found results. Groups, sub-families, areas of similarity, the outcome of reverses, traces of self and collective symmetry, common blocks (I like to name them), and many more. *Please support this research.*
 - `ref.txt` is just a plain notation of all ICRs so you do not have to compute it every time.
 
 ### Why?
@@ -49,9 +49,9 @@ I am afraid to have arbitrarly chosen 6-bit parts. The same logic would also mak
 
 de Bruijin's coincidence.
 
-The _I Ching_, known as _The Book of Changes_, is an ancient oracle and divination system, one of the oldest books of humanity. It implies *meanings* to each six bit figures, and claims these hexagrams change through the flow of life. Bits are refered as *yin* and *yang*.
+The _I Ching_, known as _The Book of Changes_, is an ancient oracle and divination system, one of the oldest books of humanity. It implies *meanings* to each six bit figures, and claims these hexagrams change through the flow of life. Bits are referred as *yin* and *yang*.
 
-Collars made out of two types of stone representing *yin* and *yang* in a never repeating hexagram order have existed and have served as amulets in the past. To my aknowledge, there is no record of a *natural position* criteria for each hexagram; I understand these collars were randomly assembled. Please let me know if you know more about it.
+Collars made out of two types of stone representing *yin* and *yang* in a never repeating hexagram order have existed and have served as amulets in the past. To my knowledge, there is no record of a *natural position* criteria for each hexagram; I understand these collars were randomly assembled. Please let me know if you know more about it.
 
 ---
 
