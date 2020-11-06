@@ -35,9 +35,23 @@ Yep; it was written two or more years ago with no formalities whatsoever. Beside
 - I do not know what `ICgroups.js` (deprecated, present only on the first commit) does; but I am under the impression many analysis may result from the found results. Groups, sub-families, areas of similarity, the outcome of reverses, traces of self and collective symmetry, common blocks (I like to name them), and many more. *Please support this research.*
 - `ref.txt` is just a plain notation of all ICRs so you do not have to compute it every time.
 
+### But a finite sequence with and arbitrarly method is not of general interest, and they correspond to de Brujin's anyway.
+
+In short, this was the OIES response I have got. "Whatever this is", they say.
+
+Imagine a state of hexagram that wants to be in fixed position at all time. It expects a new line to form a new hexagram as similar as itself as possible. Thus, each formed ring is an expression of the relation of one with all others. Beauty in finit.
+
+So, these would be a set of de Brujin's algorithm, a class with special properties.
+
+Due to the OEIS rejection, the sequences must be considered more a piece of composition than an empirical finding. _Meh_! They remain very sound to me! 
+
+### What about the method?
+
+Not being a mathematician myself makes it harder to describe the algorithm in a consise way. Largest best match wins. If the hexagram is repeated, step back recursively. Match the end to connect to the beginning.
+
 ### Why?
 
-First, art and fun. Second, is this a piece of nature? Third, some sort of quantic cosmos for wondering through an inner chaos. Forth, did I just write that? Thinking artificially, *of course*.
+First, art and fun. Second, is this a piece of nature? Third, some sort of quantic cosmos for wondering through an inner chaos. Forth, did I just write that? Thinking artificially.
 
 ### More?
 
@@ -52,8 +66,6 @@ de Bruijin's coincidence.
 The _I Ching_, known as _The Book of Changes_, is an ancient oracle and divination system, one of the oldest books of humanity. It implies *meanings* to each six bit figures, and claims these hexagrams change through the flow of life. Bits are referred as *yin* and *yang*.
 
 Collars made out of two types of stone representing *yin* and *yang* in a never repeating hexagram order have existed and have served as amulets in the past. To my knowledge, there is no record of a *natural position* criteria for each hexagram; I understand these collars were randomly assembled. Please let me know if you know more about it.
-
-I am not a mathematician, so I am very sorry for any slips.
 
 ---
 
