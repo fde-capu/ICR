@@ -9,7 +9,7 @@
 
 (4) Each solution requires more or less iterations to solve.
 
-Comments: (1) Many solutions can be found, yet to be categorized and counted. (2) Only one solution possible for each hexagram. (3) Optimally, the whole family is interpreted as reciprocals different from each other. (4) Initial algorithm needs at least 89 steps (unique case for "0, 1, 0, 1, 1, 1" and "1, 0, 1, 0, 0, 0"). Most are solved around 100~120 steps. Four reciprocal exceptions take 809, 1226801, 1180856 and 278483150 steps (the last being for "1, 0, 0, 0, 0, 1" and "0, 1, 1, 1, 1, 0").
+Comments: (1) Many random solutions can be found, yet to be categorized and counted. (2) Only one solution possible for each hexagram. (3) Optimally, the whole family is interpreted as reciprocals different from each other. (4) Initial algorithm needs at least 89 steps (unique case for "0, 1, 0, 1, 1, 1" and "1, 0, 1, 0, 0, 0"). Most are solved around 100~120 steps. Four reciprocal exceptions take 809, 1226801, 1180856 and 278483150 steps (the last being for "1, 0, 0, 0, 0, 1" and "0, 1, 1, 1, 1, 0").
 
 *The first sequence, based on "0, 0, 0, 0, 0, 0", and its reciprocal "1, 1, 1, 1, 1, 1", coincides with A169671 "Lexicographically earliest de Bruijn sequence for n = 6 and k = 2".*
 
@@ -52,6 +52,8 @@ de Bruijin's coincidence.
 The _I Ching_, known as _The Book of Changes_, is an ancient oracle and divination system, one of the oldest books of humanity. It implies *meanings* to each six bit figures, and claims these hexagrams change through the flow of life. Bits are referred as *yin* and *yang*.
 
 Collars made out of two types of stone representing *yin* and *yang* in a never repeating hexagram order have existed and have served as amulets in the past. To my knowledge, there is no record of a *natural position* criteria for each hexagram; I understand these collars were randomly assembled. Please let me know if you know more about it.
+
+I am not a mathematician, so I am very sorry for any slips.
 
 ---
 
