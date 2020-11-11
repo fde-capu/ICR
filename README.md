@@ -37,17 +37,13 @@ Yep; it was written two or more years ago with no formalities whatsoever. Beside
 
 ### But a finite sequence with and arbitrarly method is not of general interest, and they correspond to de Brujin's anyway.
 
-In short, this was the OIES response I have got. "Whatever this is", they say.
+Consider a state of hexagram that wants to be in fixed position at all time. It expects a new line to form a new hexagram as similar as itself as possible. Thus, each formed ring is an expression of the relation of one with all others. Beauty in finit.
 
-Imagine a state of hexagram that wants to be in fixed position at all time. It expects a new line to form a new hexagram as similar as itself as possible. Thus, each formed ring is an expression of the relation of one with all others. Beauty in finit.
-
-So, these would be a set of de Brujin's algorithm, a class with special properties.
-
-Due to the OEIS rejection, the sequences must be considered more a piece of composition than an empirical finding. _Meh_! They remain very sound to me! 
+So, these would be a set of de Brujin's algorithm, a class with this singular property.
 
 ### What about the method?
 
-Not being a mathematician myself makes it harder to describe the algorithm in a consise way. Largest best match wins. If the hexagram is repeated, step back recursively. Match the end to connect to the beginning.
+Largest best match wins. If the hexagram is repeated, step back recursively. Match the end to connect to the beginning (to form a ring).
 
 ### Why?
 
