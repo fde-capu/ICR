@@ -5,17 +5,21 @@
 
 (2) A bit must always be the closest approximation to the reference hexagram, that is, the last 6-bits formed figure must be as similar as possible to the first 6-bits.
 
-Comments: (1) Many random solutions can be found. (2) Only one solution possible for each hexagram.
+Comments: (1) Many random solutions can be found. (2) Unique solution for each hexagram.
 
 ---
 
 ### Crossrefs and Facts
 
-- References [0, 1, 0, 1, 1, 1] and [1, 0, 1, 0, 0, 0] need the least possible iterations of 89.
+- References [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], and [0, 0, 0, 0, 1, 0] coincide with [A169671](https://oeis.org/A169671) "Lexicographically earliest de Bruijn sequence for n = 6 and k = 2".
 
-Initial algorithm needs at least 89 steps (unique case for [0, 1, 0, 1, 1, 1] and [1, 0, 1, 0, 0, 0]. Most are solved around 100~120 steps. Four reciprocal exceptions take 809, 1226801, 1180856 and 278483150 steps (the last being for [1, 0, 0, 0, 0, 1] and [0, 1, 1, 1, 1, 0]).
+- Reference [1, 0, 0, 0, 0, 0] coincides with [A058342](https://oeis.org/A058342) "De Bruijn sequence of order 6: every window of size 6, [a(j),a(j+1),...,a(j+5)], shows a different 6-tuple, for 0 <= j <= 63.".
 
-*The sequence based on reference [0, 0, 0, 0, 0, 0], and its reciprocal [1, 1, 1, 1, 1, 1], coincides with [A169671](https://oeis.org/A169671) "Lexicographically earliest de Bruijn sequence for n = 6 and k = 2".*
+- A majority is solved in around 100~120 steps.
+
+- References [0, 1, 1, 1, 1, 0] and [1, 0, 0, 0, 0, 1] need the most iterations: 278483150.
+
+- References [0, 1, 0, 1, 1, 1] and [1, 0, 1, 0, 0, 0] need the least iterations of 89.
 
 ---
 
@@ -53,7 +57,7 @@ I am afraid to have arbitrarly chosen 6-bit parts. The same logic would also mak
 
 ### Trivias
 
-de Bruijin's coincidence.
+de Bruijin's coincidences.
 
 A `Javascript` code was originaly written in 2015 on a cellphone while travelling by subway back and forth to work in São Paulo city. Also, many of the rings, even some with long iterations, were first computed by the phone hardware. It was *really* slow.
 
