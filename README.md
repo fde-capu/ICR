@@ -19,9 +19,9 @@ Initial algorithm needs at least 89 steps (unique case for [0, 1, 0, 1, 1, 1] an
 
 then
 
-`# ./icr.a _hexagram_`
+`# ./icr.a hexagram`
 
-where _hexagram_ is a binary notation from `000000` through `111111`.
+where *hexagram* is a six-digit binary notation from `000000` through `111111`.
 
 Set the `var tic = x;` where `x` is the value of milliseconds between each iteration, if you want to watch the ring building process closely.
 

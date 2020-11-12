@@ -137,17 +137,44 @@ void						icr_solve_recursive_stack_overflow(t_icr *icr, t_yy *head)
 	}
 }
 
-int							main(int argc, char *argv[])
+int							*ref_argument(char *argv)
+{
+	int						*ref;
+	int						*h;
+	char					*r;
+	int						i;
+
+	ref = malloc(sizeof(int) * 7);
+	h = ref;
+	r = argv;
+	i = 6;
+	while (i--)
+	{
+		*h = *r - '0';
+		r++;
+		h++;
+	}
+	*h = 0;
+	return (ref);
+}
+
+int							main(int argc, char **argv)
 {
 	t_icr					*icr;
-	int						ref[6] = {1, 0, 0, 0, 0, 1};
-
-	icr = icr_build(ref);
-	icr_solve(icr, head_forward(icr->bottom, 6));
+	int						*ref;
 
 	print_title();
+	if (argc == 1)
+	{
+		printf("Usage: `icr.a hexagram`; where 'hexagram' is a six-digit binary notation from `000000` to `111111`.\n");
+		return (1);
+	}
+	ref = ref_argument(argv[1]);
+	icr = icr_build(ref);
+	icr_solve(icr, head_forward(icr->bottom, 6));
 	printf("123456789_123456789_123456789_123456789_123456789_123456789_1234\n");
 	print_icr(icr);
 	icr_destroy(icr);
+	free(ref);
 	return (0);
 }

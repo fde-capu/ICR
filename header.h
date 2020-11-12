@@ -48,7 +48,6 @@ int							is_repeated(t_yy *bottom, t_yy *head);
 void						flip(t_yy *head);
 void						icr_solve(t_icr *icr, t_yy *head);
 void						icr_solve_recursive_stack_overflow(t_icr *icr, t_yy *head);
-int							main(void);
 int							best_match(t_yy *ref, t_yy *head, int size);
 void						print_title(void);
 void						print_yy_group(t_yy *yy, int size);

@@ -26,7 +26,7 @@ $(NAME)	:	$(OBJS) $(HEAD)
 	$(CC) -o $(NAME) $(OBJS)
 
 t		:	re
-	$(VALG) ./$(NAME)
+	$(VALG) ./$(NAME) 111011
 
 clean	:
 	rm -f $(OBJS)
