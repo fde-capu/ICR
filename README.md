@@ -13,7 +13,7 @@ Comments: (1) Many random solutions can be found. (2) Unique solution for each h
 
 - References [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], and [0, 0, 0, 0, 1, 0] coincide with [A169671](https://oeis.org/A169671) "Lexicographically earliest de Bruijn sequence for n = 6 and k = 2".
 
-- Reference [1, 0, 0, 0, 0, 0] coincides with [A058342](https://oeis.org/A058342) "De Bruijn sequence of order 6: every window of size 6, [a(j),a(j+1),...,a(j+5)], shows a different 6-tuple, for 0 <= j <= 63.".
+- Reference [1, 0, 0, 0, 0, 0] coincides with [A058342](https://oeis.org/A058342) "De Bruijn sequence of order 6: every window of size 6, [a(j),a(j+1),...,a(j+5)], shows a different 6-tuple, for 0 <= j <= 63".
 
 - A majority is solved in around 100~120 steps.
 
