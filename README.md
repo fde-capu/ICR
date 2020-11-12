@@ -7,6 +7,12 @@
 
 Comments: (1) Many random solutions can be found. (2) Only one solution possible for each hexagram.
 
+---
+
+### Crossrefs and Facts
+
+- References [0, 1, 0, 1, 1, 1] and [1, 0, 1, 0, 0, 0] need the least possible iterations of 89.
+
 Initial algorithm needs at least 89 steps (unique case for [0, 1, 0, 1, 1, 1] and [1, 0, 1, 0, 0, 0]. Most are solved around 100~120 steps. Four reciprocal exceptions take 809, 1226801, 1180856 and 278483150 steps (the last being for [1, 0, 0, 0, 0, 1] and [0, 1, 1, 1, 1, 0]).
 
 *The sequence based on reference [0, 0, 0, 0, 0, 0], and its reciprocal [1, 1, 1, 1, 1, 1], coincides with [A169671](https://oeis.org/A169671) "Lexicographically earliest de Bruijn sequence for n = 6 and k = 2".*
