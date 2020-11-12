@@ -13,7 +13,7 @@
 NAME	=	icr.a
 CC		=	clang -Wall -Werror -Wextra -g
 VALG	=	valgrind --leak-check=full --show-leak-kinds=all
-SRCS	=	icr.c prints.c builds.c navigation.c
+SRCS	=	icr.c prints.c builds.c navigation.c helpers.c
 HEAD	=	header.h
 OBJS	=	$(SRCS:.c=.o)
 
@@ -26,7 +26,7 @@ $(NAME)	:	$(OBJS) $(HEAD)
 	$(CC) -o $(NAME) $(OBJS)
 
 t		:	re
-	$(VALG) ./$(NAME) 111011
+	$(VALG) ./$(NAME) 111111
 
 clean	:
 	rm -f $(OBJS)

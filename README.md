@@ -23,19 +23,11 @@ then
 
 where *hexagram* is a six-digit binary notation from `000000` through `111111`.
 
-Set the `var tic = x;` where `x` is the value of milliseconds between each iteration, if you want to watch the ring building process closely.
-
-#### What about the other files?
-
-- `ICbitmap.js` writes a qrcodesque `.bmp` file representing all rings.
-- I do not know what `ICgroups.js` (deprecated, present only on the first commit) does; but I am under the impression many analysis may result from the found results. Groups, sub-families, areas of similarity, the outcome of reverses, traces of self and collective symmetry, common blocks (I like to name them), and many more. *Please support this research.*
-- `ref.txt` is just a plain notation of all ICRs so you do not have to compute it every time.
-
 ### But a finite sequence with and arbitrarly method is not of general interest, and they correspond to de Brujin's anyway.
 
 Consider a state of hexagram that wants to be in fixed position at all time. It expects a new line to form a new hexagram as similar as itself as possible. Thus, each formed ring is an expression of the relation of one with all others. Beauty in finit.
 
-So, these would be a set of de Brujin's algorithm, a class with this singular property.
+These are a set of de Brujin's algorithm, a class with the singular property of being centralized on a reference hexagram.
 
 ### What about the method?
 
@@ -43,19 +35,21 @@ Largest best match wins. If the hexagram is repeated, step back recursively. Mat
 
 ### Why?
 
-First, art and fun. Second, is this a piece of nature? Third, some sort of quantic cosmos for wondering through an inner chaos. Forth, did I just write that? Thinking artificially.
+First, art and fun. Second, is this a piece of nature? Third, some sort of quantic cosmos for wondering through an inner chaos. Forth, did I just write that?
+
+I find myself under the impression that many analysis may result from the found results. Groups, sub-families, areas of similarity, the outcome of reverses, traces of self and collective symmetry, common blocks (I like to name them), and many more keep popping in my head. *Please support this research.*
 
 ### More?
 
-I call these the *natural positions* of I Ching rings.
+I call these the *natural positions* of I Ching rings. There are also *random* positions.
 
-I am afraid to have arbitrarly chosen 6-bit parts. The same logic would also make sense on any N-bit system.
+I am afraid to have arbitrarly chosen 6-bit parts. The same logic would also make sense on any N-bit system. Some of the code was written with this in mind, but it is experimental.
 
-### Trivias?
+### Trivias
 
 de Bruijin's coincidence.
 
-The `.js` code was originaly written in 2015 on a cellphone while travelling by subway back and forth to work in São Paulo city. Also, the many of the rings, even some long iterations, were first computed by this hardware.
+A `Javascript` code was originaly written in 2015 on a cellphone while travelling by subway back and forth to work in São Paulo city. Also, many of the rings, even some with long iterations, were first computed by the phone hardware. It was *really* slow.
 
 The _I Ching_, known as _The Book of Changes_, is an ancient oracle and divination system, one of the oldest books of humanity. It implies *meanings* to each six bit figures, and claims these hexagrams change through the flow of life. Bits are referred as *yin* and *yang*.
 
@@ -64,7 +58,7 @@ Collars made out of two types of stone representing *yin* and *yang* in a never 
 ### To-do
 
 - Iteration counter.
-- Visual mode (slower, but you can see it working).
+- Visual mode (slower, while you could see it in action).
 - Chronometer.
 - Generalize for any `k` and `n`.
 

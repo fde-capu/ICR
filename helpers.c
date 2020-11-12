@@ -6,7 +6,7 @@
 /*                                             */
 /*                                             */
 /* C20201112115152 ::::|:                      */
-/* U20201112115222 ||::||                      */
+/* U20201112121706 :|::::                      */
 /*                                             */
 /* ******************************************* */
 
@@ -37,4 +37,25 @@ void						flip(t_yy *head)
 {
 	head->flipped = 1;
 	head->val = head->val == 0 ? 1 : 0;
+}
+
+int							*ref_argument(char *argv)
+{
+	int						*ref;
+	int						*h;
+	char					*r;
+	int						i;
+
+	ref = malloc(sizeof(int) * 7);
+	h = ref;
+	r = argv;
+	i = 6;
+	while (i--)
+	{
+		*h = *r - '0';
+		r++;
+		h++;
+	}
+	*h = 0;
+	return (ref);
 }

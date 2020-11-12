@@ -1,12 +1,12 @@
 /* ******************************************* */
 /*                                             */
 /*                     ::|:||:||::|:|:|||:|||| */
-/* prints.c            :|:|::|::||:|:::|::::|| */
+/* prints.c            :::||:||:|::||::|:||::: */
 /*                     :::|||::||||||::::::|:| */
 /*                                             */
 /*                                             */
 /* C20201111112448 |:|::|                      */
-/* U20201111141047 |::|||                      */
+/* U20201112121747 :::||:                      */
 /*                                             */
 /* ******************************************* */
 
@@ -26,7 +26,6 @@ void						print_yy_group(t_yy *yy, int size)
 void						print_yy(t_yy *yy)
 {
 	printf("%d", yy->val);
-	//printf("%02ld %p fix: %d\tflip: %d\tval: %d\n", 64 - (last - head), head, head->fixed, head->flipped, head->val);
 	return ;
 }
 
@@ -35,6 +34,7 @@ void						print_icr(t_icr *icr)
 	t_yy					*last;
 	t_yy					*head;
 
+	print_ruler();
 	last = icr->bottom->pv;
 	head = icr->bottom;
 	while (1)
@@ -44,7 +44,7 @@ void						print_icr(t_icr *icr)
 		else
 			printf("_");
 		if (head == last)
-			break;
+			break ;
 		head = head->nx;
 	}
 	printf("\n");
@@ -53,6 +53,21 @@ void						print_icr(t_icr *icr)
 
 void						print_title(void)
 {
-	printf("I Ching Ring\n");
+	printf("\nI Ching Ring\nby fde-capu\n\n");
+	return ;
+}
+
+void						print_ruler(void)
+{
+	printf("123456789_123456789_123456789_123456789_123456789_123456789");
+	printf("_1234\n");
+	return ;
+}
+
+void						print_help(void)
+{
+	printf("Usage: `./icr.a hexagram`; ");
+	printf("where 'hexagram' is a six-digit binary notation ");
+	printf("from `000000` to `111111`.\n");
 	return ;
 }
