@@ -21,7 +21,29 @@ Comments: (1) Many random solutions can be found. (2) Unique solution for each h
 
 - References [0, 1, 0, 1, 1, 1] and [1, 0, 1, 0, 0, 0] need the least iterations of 89.
 
----
+### Pseudo-code
+
+	for each bit position, starting at empty after the reference:
+		if there is no value, find the *best_match*.
+		if it forms a repeated hexagram, try inverting the bit at current position.
+		if it is still a repeated figure,
+			go back to the last bit that has not been inverted.
+			Reset all bits on the way.
+			Invert the new position.
+		if it is not a repeated hexagram, move forward.
+		if all positions are fullfilled and there are no repetitions, stop.
+
+	*best_match* function:
+		// hexagrams are 6-bit, so only need to match from below 4 bits.
+		take in account the last four digits:
+			if it matchs the first four, return the 5th.
+			if it matches the digits 2, 3, 4, 5, return the 6th.
+		take in account the last three digits:
+			if it match the first three digits, return the 4th.
+			if it match the digits 2, 3, 4, return the 5th.
+			if it match the digits 3, 4, 5, return the 6th
+		// (...) use the same method for two and one digit.
+		if nothing matches, return digit number 1.
 
 ### Usage
 
