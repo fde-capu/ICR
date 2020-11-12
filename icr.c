@@ -78,20 +78,34 @@ int							random_match(t_yy *ref, t_yy *head)
 	return (rand() % 2);
 }
 
-int deb = 3;
+int deb = 10;
 void						icr_solve(t_icr *icr, t_yy *head)
 {
 	const int				size_minus_one = 6 - 1;
 
-	while (head != head_forward(icr->bottom, size_minus_one))
+	while (1)
 	{
+		//if (!deb--) return;
+		//print_icr(icr);
 		if (head->val == -1)
+		{
 			head->val = best_match(icr->bottom, head, size_minus_one);
+			continue ;
+		}
 		if (is_repeated(icr->bottom, head_back(head, size_minus_one)))
 		{
 			//printf("repeated!\n");
 			head = reset_to_last_unflipped(head);
 			flip(head);
+			continue ;
+		}
+		else
+		{
+			//printf("continue\n");
+			if (head == head_forward(icr->bottom, size_minus_one))
+				break ;
+			head = head->nx;
+			continue ;
 		}
 	}
 	return ;
@@ -123,16 +137,16 @@ void						icr_solve_recursive_stack_overflow(t_icr *icr, t_yy *head)
 	}
 }
 
-int							main(void)
+int							main(int argc, char *argv[])
 {
 	t_icr					*icr;
-	int						ref[6] = {1, 1, 1, 1, 1, 1};
+	int						ref[6] = {1, 0, 0, 0, 0, 1};
 
 	icr = icr_build(ref);
-	printf("123456789_123456789_123456789_123456789_123456789_123456789_1234\n");
 	icr_solve(icr, head_forward(icr->bottom, 6));
 
 	print_title();
+	printf("123456789_123456789_123456789_123456789_123456789_123456789_1234\n");
 	print_icr(icr);
 	icr_destroy(icr);
 	return (0);

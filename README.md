@@ -5,29 +5,25 @@
 
 (2) A bit must always be the closest approximation to the reference hexagram, that is, the last 6-bits formed figure must be as similar as possible to the first 6-bits.
 
-(3) The method gives 64 results, 32 of which have inverted reciprocals within the family.
+Comments: (1) Many random solutions can be found. (2) Only one solution possible for each hexagram.
 
-(4) Each solution requires more or less iterations to solve.
+Initial algorithm needs at least 89 steps (unique case for [0, 1, 0, 1, 1, 1] and [1, 0, 1, 0, 0, 0]. Most are solved around 100~120 steps. Four reciprocal exceptions take 809, 1226801, 1180856 and 278483150 steps (the last being for [1, 0, 0, 0, 0, 1] and [0, 1, 1, 1, 1, 0]).
 
-Comments: (1) Many random solutions can be found, yet to be categorized and counted. (2) Only one solution possible for each hexagram. (3) Optimally, the whole family is interpreted as reciprocals different from each other. (4) Initial algorithm needs at least 89 steps (unique case for "0, 1, 0, 1, 1, 1" and "1, 0, 1, 0, 0, 0"). Most are solved around 100~120 steps. Four reciprocal exceptions take 809, 1226801, 1180856 and 278483150 steps (the last being for "1, 0, 0, 0, 0, 1" and "0, 1, 1, 1, 1, 0").
-
-*The first sequence, based on "0, 0, 0, 0, 0, 0", and its reciprocal "1, 1, 1, 1, 1, 1", coincides with A169671 "Lexicographically earliest de Bruijn sequence for n = 6 and k = 2".*
+*The sequence based on reference [0, 0, 0, 0, 0, 0], and its reciprocal [1, 1, 1, 1, 1, 1], coincides with [A169671](https://oeis.org/A169671) "Lexicographically earliest de Bruijn sequence for n = 6 and k = 2".*
 
 ---
 
-### This `ICR.js`, how do I use it?
+### Usage
 
-Look at the commented `ref="(...);"` section within the file. Leave all comments (`//`), and uncomment only the reference you want to run. Open `index.htm` on a web browser. Wait for the result, it might take a little while.
+`# make`
+
+then
+
+`# ./icr.a _hexagram_`
+
+where _hexagram_ is a binary notation from `000000` through `111111`.
 
 Set the `var tic = x;` where `x` is the value of milliseconds between each iteration, if you want to watch the ring building process closely.
-
-#### But the code is a mess!
-
-Yep; it was written two or more years ago with no formalities whatsoever. Besides, it is a file you _should_ want to play around.
-
-##### It would be so much more efficient if...
-
-...do not tell, I know, someday I will code it neatier. I promise a `C` file at any time.
 
 #### What about the other files?
 
@@ -59,9 +55,18 @@ I am afraid to have arbitrarly chosen 6-bit parts. The same logic would also mak
 
 de Bruijin's coincidence.
 
+The `.js` code was originaly written in 2015 on a cellphone while travelling by subway back and forth to work in São Paulo city. Also, the many of the rings, even some long iterations, were first computed by this hardware.
+
 The _I Ching_, known as _The Book of Changes_, is an ancient oracle and divination system, one of the oldest books of humanity. It implies *meanings* to each six bit figures, and claims these hexagrams change through the flow of life. Bits are referred as *yin* and *yang*.
 
 Collars made out of two types of stone representing *yin* and *yang* in a never repeating hexagram order have existed and have served as amulets in the past. To my knowledge, there is no record of a *natural position* criteria for each hexagram; I understand these collars were randomly assembled. Please let me know if you know more about it.
+
+### To-do
+
+- Iteration counter.
+- Visual mode (slower, but you can see it working).
+- Chronometer.
+- Generalize for any `k` and `n`.
 
 ---
 
