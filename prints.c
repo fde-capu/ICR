@@ -6,7 +6,7 @@
 /*                                             */
 /*                                             */
 /* C20201111112448 |:|::|                      */
-/* U20201112121747 :::||:                      */
+/* U20201112123124 |::||:                      */
 /*                                             */
 /* ******************************************* */
 
@@ -53,7 +53,7 @@ void						print_icr(t_icr *icr)
 
 void						print_title(void)
 {
-	printf("\nI Ching Ring\nby fde-capu\n\n");
+	printf("I Ching Ring\nby fde-capu\n");
 	return ;
 }
 
