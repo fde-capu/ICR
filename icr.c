@@ -17,7 +17,6 @@ int							best_match(t_yy *ref, t_yy *head, int size)
 	int						i;
 	t_yy					*ref_p;
 	t_yy					*head_p;
-	int						out;
 
 	if (!size)
 		return (ref->val);
@@ -27,10 +26,7 @@ int							best_match(t_yy *ref, t_yy *head, int size)
 		ref_p = head_forward(ref, i);
 		head_p = head_back(head, size);
 		if (hex_equal(ref_p, head_p, size))
-		{
-			out = size == 6 ? ref_p->val : head_forward(ref_p, size)->val;
-			return (out);
-		}
+			return (size == 6 ? ref_p->val : head_forward(ref_p, size)->val);
 		i++;
 	}
 	return (best_match(ref, head, --size));
