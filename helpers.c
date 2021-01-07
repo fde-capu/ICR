@@ -12,7 +12,7 @@
 
 #include "header.h"
 
-int							hex_equal(t_yy *bottom, t_yy *compare, int size)
+int	hex_equal(t_yy *bottom, t_yy *compare, int size)
 {
 	if ((!size) || (bottom == compare))
 		return (1);
@@ -24,7 +24,7 @@ int							hex_equal(t_yy *bottom, t_yy *compare, int size)
 		return (0);
 }
 
-int							is_repeated(t_yy *bottom, t_yy *head)
+int	is_repeated(t_yy *bottom, t_yy *head)
 {
 	if (bottom == head)
 		return (0);
@@ -33,13 +33,13 @@ int							is_repeated(t_yy *bottom, t_yy *head)
 	return (is_repeated(bottom->nx, head));
 }
 
-void						flip(t_yy *head)
+void	flip(t_yy *head)
 {
 	head->flipped = 1;
 	head->val = head->val == 0 ? 1 : 0;
 }
 
-int							*ref_argument(char *argv)
+int	*ref_argument(char *argv)
 {
 	int						*ref;
 	int						*h;

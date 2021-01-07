@@ -77,6 +77,8 @@ I call these the *natural positions* of I Ching rings. There are also *random* p
 
 I am afraid to have arbitrarly chosen 6-bit parts. The same logic would also make sense on any N-bit system. Some of the code was written with this in mind, but it is experimental.
 
+I have applied for the OEIS, though I could not properly render the comparison algorithm in one line, as only like so would be possible for proper understanding. As I struggled with my poor math, I appreciate if you can help me with this.
+
 ### Trivias
 
 de Bruijin's coincidences.

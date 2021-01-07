@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <stdio.h>
 
-typedef struct				s_yin_yang
+typedef struct s_yin_yang
 {
 	int						val;
 	int						flipped;
@@ -25,13 +25,13 @@ typedef struct				s_yin_yang
 	struct s_yin_yang		*pv;
 }							t_yy;
 
-typedef struct				s_iching_ring
+typedef struct s_iching_ring
 {
 	t_yy					*yy[64];
 	t_yy					*bottom;
 }							t_icr;
 
-typedef struct				s_hexagram
+typedef struct s_hexagram
 {
 	t_yy					yy[6];
 }							t_hex;

@@ -12,7 +12,7 @@
 
 #include "header.h"
 
-t_icr						*icr_build(int ref[6])
+t_icr	*icr_build(int ref[6])
 {
 	t_icr					*icr;
 	int						i;
@@ -41,7 +41,7 @@ t_icr						*icr_build(int ref[6])
 	return (icr);
 }
 
-void						icr_destroy(t_icr *icr)
+void	icr_destroy(t_icr *icr)
 {
 	int						i;
 
